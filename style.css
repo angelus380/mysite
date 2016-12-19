@@ -1,0 +1,109 @@
+/*
+Theme Name: DelmarALmdeiaWebsite
+Author: Delmar Almeida
+Author URI: https://delmaralmeida.com/
+Description: Custom website template for my own business. If you need a custom website feel free to contact me :)
+Version: 1.0
+*/
+
+/* css call*/
+@import url( 'vendor/bootstrap/css/bootstrap.min.css' );
+@import url( 'vendor/fontawesome/css/font-awesome.min.css' );
+@import url( 'css/animate.css' );
+@import url( 'css/flexbox.css' );
+@import url( 'css/theme.css' );
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* html body */
+body {
+	image-rendering: -webkit-optimize-contrast;
+	font-family: var(--raleway);
+	line-height: 1;
+	letter-spacing: 1px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: var(--bree);
+}
+a {
+	color: var(--light);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+  transition:all 0.3s ease;
+}
+a:hover,
+a:focus {
+	color: var(--light);
+}
+:root {
+  --normal: #CE3F3F;
+  --dark: #AE2121;
+  --darkest: #880707;
+  --light: #ED6868;
+  --lightest: #FF9A9A;
+  --bree: "Bree Serif", serif;
+  --raleway:"Raleway",sans-serif;
+}
+::selection {
+    text-shadow: none;
+    color: #fff;
+    background: var(--normal);
+}
+/* wp admin bar */
+.admin-bar .navbar.navbar-fixed-top {
+	margin-top: 46px;
+}
+@media (min-width: 768px) {
+	.admin-bar .navbar.navbar-fixed-top {
+		margin-top: 32px;
+	}
+}
+/* error pages */
+.error404.admin-bar,
+.page-template-default.admin-bar {
+	height: calc(100vh - 32px);
+}
+.error404,
+.page-template-default {
+	height: calc(100vh);
+	color: #333;
+	background-color: #fff;
+}
+.error-404 h1 {
+	margin: 40px 0;
+	font-size: 150px;
+	font-weight: bold;
+	color: var(--normal);
+	text-shadow: 3px 3px var(--darkest);
+}
+.error-404 h2 {
+	margin: 20px 0;
+}
+.error-404 p {
+	line-height: 1.4;
+}
+.error-404 a.theme-btn,
+.no-content a.theme-btn {
+	margin-top: 40px;
+	text-transform: initial;
+}
+.error-404 i,
+.no-content i {
+	padding-right: 20px;
+}
+.error404 nav,
+.error404 footer,
+.page-template-default nav,
+.page-template-default footer {
+	display: none;
+}
+@media (min-width: 768px) {
+	.error-404,
+	.no-content {
+		padding-top: 10%;
+	}
+}

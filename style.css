@@ -10,7 +10,6 @@ Version: 1.0
 @import url( 'vendor/bootstrap/css/bootstrap.min.css' );
 @import url( 'vendor/fontawesome/css/font-awesome.min.css' );
 @import url( 'css/animate.css' );
-@import url( 'css/flexbox.css' );
 @import url( 'css/theme.css' );
 
 /* fonts */
@@ -86,13 +85,11 @@ a:focus {
 .error-404 p {
 	line-height: 1.4;
 }
-.error-404 a.theme-btn,
-.no-content a.theme-btn {
+.error-404 a.theme-btn {
 	margin-top: 40px;
 	text-transform: initial;
 }
-.error-404 i,
-.no-content i {
+.error-404 i {
 	padding-right: 20px;
 }
 .error404 nav,
@@ -102,8 +99,7 @@ a:focus {
 	display: none;
 }
 @media (min-width: 768px) {
-	.error-404,
-	.no-content {
+	.error-404 {
 		padding-top: 10%;
 	}
 }

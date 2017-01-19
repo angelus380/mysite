@@ -2,9 +2,10 @@
 
 <header>
 	<div class="container">
-		<div class="no-content text-center">
+		<div class="error-404 text-center">
 			<h1>Ops!</h1>
-			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+			<h2>Content not available.</h2>
+			<p><?php _e( 'Sorry, This content is not available here.' ); ?></p>
 			<a class="theme-btn" href="<?php echo home_url(); ?>"><i class="fa fa-arrow-left"></i>go back</a>
 		</div>
 	</div>
